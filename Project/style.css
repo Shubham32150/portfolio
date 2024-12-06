@@ -1,0 +1,308 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+  /* background-color: #333; */
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #4070f4;
+}
+
+/* Home Page */
+.home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.home-container {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.home-container p {
+  margin-bottom: 30px;
+  color: #777;
+  font-size: 18px;
+}
+
+.home-container .btn {
+  padding: 12px 30px;
+  background-color: #4070f4;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.home-container .btn:hover {
+  background-color: #365ab4;
+}
+
+/* Profile Cards */
+.container{
+  background: #222;
+  height:100vh;
+}
+
+.profiles{
+  background-color: #222;
+}
+
+.profile-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+
+.profile-card {
+  /* background-color: #fff; */
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.profile-card p {
+  color: #777;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 5px;
+  color: #4070f4;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #365ab4;
+}
+
+/* Contact Form Styles */
+.contact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #222;
+}
+
+.contact-container {
+  max-width: 540px;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  color:#fff;
+  background-color: #222;
+  transition: border-color 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #4070f4;
+  outline: none;
+}
+
+.contact-container button {
+  padding: 12px 30px;
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+  background-color: #365ab4;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  /* position: fixed;  */
+  bottom: 0;
+  width: 100%;
+  /* left: 0; */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4070f4;
+}
+
+/* Search Section Styling */
+.search-bar-container {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px; /* Adjust width as necessary */
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0e4bf1;
+}

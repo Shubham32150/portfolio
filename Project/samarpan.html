@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="profileCard.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">MySite</a>
+            <ul class="navbar-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="profiles.html">Profiles</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+  <div class="body">    
+    <div class="profile-card">
+      <!-- Search Section -->
+      <div class="search-bar">
+        <input type="text" id="search-input" class="search-input" placeholder="Search for a profile..." />
+        <button onclick="searchProfile()" class="search-button">Go</button>
+      </div>
+
+      <!-- Profile Card Content -->
+      <div class="image">
+        <img src="photos/samarpan.png" alt="Samarpan" class="profile-img" />
+      </div>
+
+      <div class="text-data">
+        <span class="name">Samarpan Vaidhya</span>
+        <span class="job">Student</span>
+      </div>
+
+      <div class="media-buttons">
+        <a href="https://www.facebook.com/samarpan.vaidya.7" style="background: #4267b2" class="link">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="#" style="background: #1da1f2" class="link">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/bipin_sigdel_/" style="background: #e1306c" class="link">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#" style="background: #ff0000" class="link">
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </div>
+
+      <div class="buttons">
+        <a href="https://www.instagram.com/vaidyasamarpan/" class="button" target="_blank">Follow</a>
+        <a href="https://m.me/samarpan.vaidya.7" class="button" target="_blank">Message</a>
+      </div>
+
+      <div class="analytics">
+        <div class="data">
+          <span class="number">137 followers</span>
+        </div>
+        <div class="data">
+          <span class="number">158 following</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      function searchProfile() {
+        const searchQuery = document.getElementById("search-input").value.trim().toLowerCase();
+
+        if (searchQuery) {
+          // Construct the URL dynamically based on the input
+          const profileUrl = searchQuery + ".html";
+          
+          // Check if the profile exists (basic check if the file exists, you can enhance this)
+          // If the file exists, it will redirect to that profile
+          window.location.href = profileUrl;
+        } else {
+          alert("Please enter a name to search!");
+        }
+      }
+    </script>
+  </body>
+</html>

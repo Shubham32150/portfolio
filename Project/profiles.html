@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profiles - MySite</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">MySite</a>
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profiles.html">Profiles</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+              <!-- Search Section -->
+      <div class="search-bar">
+        <input type="text" id="search-input" class="search-input" placeholder="Search for a profile..." />
+        <button onclick="searchProfile()" class="search-button">Go</button>
+      </div>
+
+      
+        <!-- Profile Section -->
+        <section class="profiles">
+            <h2>Our Profiles</h2>
+            <div class="profile-cards">
+                <div class="profile-card">
+                    <img src="photos/shubham.png" alt="Shubham Pradhananga" class="profile-img" />
+                    <h3>Shubham Pradhananga</h3>
+                    <p>Student</p>
+                    <p class="bio">A passionate learner and aspiring developer with a keen interest in web technologies.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/shubham_pradhananga/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/profile.php?id=100052168624124" target="_blank">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="photos/samarpan.png" alt="Samarpan Vaidhya" class="profile-img" />
+                    <h3>Samarpan Vaidhya</h3>
+                    <p>Developer</p>
+                    <p class="bio">A skilled developer with experience in building dynamic web applications and a love for coding.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vaidyasamarpan/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/samarpan.vaidya.7" target="_blank">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="photos/bipin.png" alt="Bipin Sigdel" class="profile-img" />
+                    <h3>Bipin Sigdel</h3>
+                    <p>Developer</p>
+                    <p class="bio">A skilled developer with experience in building dynamic web applications and a love for coding.</p>
+                    <br>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bipin_sigdel_/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/bipin.sigdel" target="_blank">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="photos/saphal.png" alt="Saphal Sapkota" class="profile-img" />
+                    <h3>Saphal Sapkota</h3>
+                    <p>Developer</p>
+                    <p class="bio">A skilled developer with experience in building dynamic web applications and a love for coding.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/saphal.sapkota.98/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/saphal.sapkota.98" target="_blank">Facebook</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    
+    <script>
+        function searchProfile() {
+          const searchQuery = document.getElementById("search-input").value.trim().toLowerCase();
+  
+          if (searchQuery) {
+            // Construct the URL dynamically based on the input
+            const profileUrl = searchQuery + ".html";
+            
+            // Check if the profile exists (basic check if the file exists, you can enhance this)
+            // If the file exists, it will redirect to that profile
+            window.location.href = profileUrl;
+          } else {
+            alert("Please enter a name to search!");
+          }
+        }
+      </script>
+</body>
+</html>
